@@ -1,5 +1,5 @@
 iname  = "Jenkins"
-ami_id = "ami-0b86aaed8ef90e45f"
+ami_id = "ami-085386e29e44dacd7"
 itype  = "t2.micro"
 kname  = "admin_key"
 

@@ -1,6 +1,7 @@
 resource "aws_security_group" "terraform_1" {
 name=var.sg1_name
 description=var.sg1_desc
+vpc_id      = aws_vpc.terraform.id
 
 ingress {
 from_port="8080"
@@ -32,6 +33,7 @@ egress {
 resource "aws_security_group" "terraform_2" {
 name=var.sg2_name
 description=var.sg2_desc
+vpc_id      = aws_vpc.terraform.id
 
 ingress {
 from_port="80"
